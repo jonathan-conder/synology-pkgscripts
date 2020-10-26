@@ -1,0 +1,3 @@
+[submodule "source/minimalPkg"]
+	path = source/minimalPkg
+	url = https://github.com/SynologyOpenSource/minimalPkg.git
