@@ -1,0 +1,9 @@
+diff -Nru a/env.mak.template b/env.mak.template
+--- a/env.mak.template	2020-10-26 17:34:18.317033489 +1300
++++ b/env.mak.template	2020-10-26 17:35:27.976793629 +1300
+@@ -43,3 +43,5 @@
+ STATIC_NM=
+ SupportNSM=yes
+ BRINGUP_VERSION=5.2
++KSRC=/usr/lib/modules/SRM-5.2/build
++CROSS_COMPILE=/usr/local/arm-unknown-linux-gnueabi/bin/arm-unknown-linux-gnueabi-

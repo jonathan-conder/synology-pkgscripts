@@ -33,6 +33,13 @@ You can also build packages from a shell inside the container:
 [This guide](https://help.synology.com/developer-guide/index.html) explains how to create packages for [pkgscripts-ng](https://github.com/SynologyOpenSource/pkgscripts-ng), most of which still applies to [pkgscripts](https://github.com/SynologyOpenSource/pkgscripts) packages.
 Place your package in `source/{PACKAGE_NAME}`.
 
+## Building kernel modules
+
+Although [pkgscripts](https://github.com/SynologyOpenSource/pkgscripts) does not seem to support this, it is fairly straightforward to backport a kernel module packaged for [pkgscripts-ng](https://github.com/SynologyOpenSource/pkgscripts-ng) ([here is an example](https://github.com/jonathan-conder/HelloKernel/commit/0cf799cdc605d705b399e42ba3347276fdef32fb)).
+[This guide](https://help.synology.com/developer-guide/create_package/compile_kernel_module.html) may also be useful.
+However, you may have to patch the toolchain to expose the `KSRC` and `CROSS_COMPILE` variables ([here is an example](patches/build_env/ds.ipq806x-1.2/kconfig.patch)).
+Synology provides [kernel source code](http://sourceforge.net/projects/dsgpl/files/Synology%20NAS%20GPL%20Source/7274branch/) for each platform, in case some files are missing from the build environment.
+
 ## Acknowledgements
 
 Partially based on [synology-wireguard](https://github.com/runfalk/synology-wireguard) and of course [pkgscripts](https://github.com/SynologyOpenSource/pkgscripts).

@@ -1,3 +1,6 @@
 [submodule "source/minimalPkg"]
 	path = source/minimalPkg
 	url = https://github.com/SynologyOpenSource/minimalPkg.git
+[submodule "source/HelloKernel"]
+	path = source/HelloKernel
+	url = https://github.com/jonathan-conder/HelloKernel.git

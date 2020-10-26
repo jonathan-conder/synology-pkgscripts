@@ -1,0 +1,8 @@
+diff -Nru a/usr/lib/modules/SRM-5.2/build/arch/arm/kernel/module.lds b/usr/lib/modules/SRM-5.2/build/arch/arm/kernel/module.lds
+--- a/usr/lib/modules/SRM-5.2/build/arch/arm/kernel/module.lds	1970-01-01 12:00:00.000000000 +1200
++++ b/usr/lib/modules/SRM-5.2/build/arch/arm/kernel/module.lds	2020-10-26 17:13:05.781372272 +1300
+@@ -0,0 +1,4 @@
++SECTIONS {
++        .core.plt : { BYTE(0) }
++        .init.plt : { BYTE(0) }
++}
