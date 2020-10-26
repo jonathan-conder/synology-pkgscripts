@@ -4,3 +4,6 @@
 [submodule "source/HelloKernel"]
 	path = source/HelloKernel
 	url = https://github.com/jonathan-conder/HelloKernel.git
+[submodule "source/WireGuard"]
+	path = source/WireGuard
+	url = https://github.com/jonathan-conder/synology-wireguard.git
